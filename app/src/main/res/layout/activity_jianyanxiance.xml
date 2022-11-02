@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.JianyanxianceActivity">
+
+    <include layout="@layout/header"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@android:drawable/edit_text"
+        android:enabled="true"
+        android:gravity="center"
+        android:hint="主题"
+        android:inputType="textMultiLine"
+        android:maxLines="10"
+        android:minLines="8"
+        android:scrollbars="vertical" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:background="@android:drawable/edit_text"
+        android:enabled="true"
+        android:gravity="center"
+        android:hint="姓名"
+        android:inputType="textMultiLine"
+        android:maxLines="10"
+        android:minLines="8"
+        android:scrollbars="vertical" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:background="@android:drawable/edit_text"
+        android:enabled="true"
+        android:gravity="center"
+        android:hint="手机号"
+        android:inputType="textMultiLine"
+        android:maxLines="10"
+        android:minLines="8"
+        android:scrollbars="vertical" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:background="@android:drawable/edit_text"
+        android:enabled="true"
+        android:gravity="center"
+        android:hint="内容描述"
+        android:inputType="textMultiLine"
+        android:maxLines="10"
+        android:minLines="8"
+        android:scrollbars="vertical" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/login_btn_style"
+        android:text="提交"
+        android:textColor="#FFFFFF"
+        android:textSize="17sp" />
+</LinearLayout>

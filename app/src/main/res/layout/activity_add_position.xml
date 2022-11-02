@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".otherview.AddPositionActivity">
+    <Spinner
+        android:id="@+id/spinneredu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/edu"
+        android:spinnerMode="dialog" />
+
+    <EditText
+        android:id="@+id/education"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入教育经历" />
+
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="现居地址" />
+    <EditText
+        android:id="@+id/experience"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入工作经历" />
+
+    <EditText
+        android:id="@+id/individualResume"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="个人简介" />
+
+    <EditText
+        android:id="@+id/money"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="5000"
+        android:hint="期望薪资" />
+    <Spinner
+        android:id="@+id/positionId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/positioncontent"
+        android:spinnerMode="dialog" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:id="@+id/tv_file"
+            android:ems="10"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/choose"
+            android:text="上传简历"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_addPosition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="申请职位" />
+</LinearLayout>

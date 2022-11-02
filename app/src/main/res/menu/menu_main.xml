@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:id="@+id/menu_group">
+        <item android:id="@+id/index"
+            app:showAsAction="always"
+            android:icon="@drawable/welcome1"
+            android:title="主页"/>
+        <item android:id="@+id/weather"
+            app:showAsAction="ifRoom"
+            android:icon="@drawable/welcome1"
+            android:title="天气">
+            <menu>
+                <item android:id="@+id/today"
+                    android:title="今日天气"/>
+                <item android:id="@+id/week"
+                    android:title="一周天气"/>
+            </menu>
+        </item>
+        <item android:id="@+id/trend"
+            app:showAsAction="ifRoom"
+            android:icon="@drawable/welcome1"
+            android:title="趋势"/>
+        <item android:id="@+id/tools"
+            app:showAsAction="ifRoom"
+            android:icon="@drawable/welcome1"
+            android:title="工具"/>
+        <item android:id="@+id/setting"
+            app:showAsAction="ifRoom"
+            android:icon="@drawable/welcome1"
+            android:title="设置"/>
+    </group>
+</menu>

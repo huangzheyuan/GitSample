@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/student_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".otherview.GetInfoActivity">
+
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/header" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:divider="#8a8a8a"
+        android:orientation="vertical"
+        android:showDividers="middle">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_weight="1"
+                android:text="头像"
+                android:textSize="16sp" />
+
+
+            <ImageView
+                android:id="@+id/ava_img"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginEnd="16dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/p9" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView35"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_weight="1"
+                android:text="昵称"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/et_nick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:background="@null"
+                android:textColor="#8a8a8a"
+                android:textSize="16sp"
+                tools:text="昵称" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center_vertical"
+
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView37"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_weight="1"
+                android:text="性别"
+                android:textSize="16sp" />
+
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="16dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rd_male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:drawableStart="@drawable/male"
+                    android:drawablePadding="2dp"
+                    android:text="男"
+                    android:textColor="#8a8a8a"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/rd_female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:button="@null"
+                    android:drawableStart="@drawable/male"
+                    android:drawablePadding="2dp"
+                    android:text="女"
+                    android:textColor="#8a8a8a"
+                    android:textSize="16sp" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/textView36"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_weight="1"
+                android:text="电话"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/et_tel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:background="@null"
+                android:textColor="#8a8a8a"
+                android:textSize="16sp"
+                tools:text="13089898989" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="email"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/editText_email"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="16dp"
+                android:background="@null"
+                android:gravity="right|center_vertical"
+
+                android:textColor="#8a8a8a"
+                android:textSize="16sp"
+                tools:text="a@a.a" />
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="身份证"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/editText_id_card"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="16dp"
+                android:background="@null"
+                android:gravity="right|center_vertical"
+                android:textColor="#8a8a8a"
+                android:textSize="16sp"
+                tools:text="21*********9988" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/button_update_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/button_dra"
+        android:text="修改"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+</LinearLayout>
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+    <!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--    xmlns:tools="http://schemas.android.com/tools"-->
+    <!--    android:id="@+id/student_layout"-->
+    <!--    android:layout_width="match_parent"-->
+    <!--    android:layout_height="match_parent"-->
+    <!--    android:orientation="vertical"-->
+    <!--    tools:context=".otherview.GetInfoActivity">-->
+
+    <!--&lt;!&ndash;    <androidx.appcompat.widget.Toolbar&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:id="@+id/toolbar"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:layout_width="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:background="#0000ff"&ndash;&gt;-->
+    <!--&lt;!&ndash;        android:visibility="gone" />&ndash;&gt;-->
+
+    <!--    <include-->
+    <!--        android:id="@+id/include2"-->
+    <!--        layout="@layout/header" />-->
+
+
+    <!--    <Button-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginStart="24dp"-->
+    <!--        android:layout_marginTop="32dp"-->
+    <!--        android:layout_marginEnd="24dp"-->
+    <!--        android:background="@drawable/button_dra"-->
+    <!--        android:onClick="update"-->
+    <!--        android:text="修改"-->
+    <!--        android:textColor="@android:color/white"-->
+    <!--        android:textSize="18sp"-->
+    <!--        app:layout_constraintEnd_toEndOf="@+id/et_nick"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/et_tel" />-->
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/ava_img"-->
+    <!--        android:layout_width="70dp"-->
+    <!--        android:layout_height="70dp"-->
+    <!--        android:layout_marginTop="64dp"-->
+    <!--        android:src="@drawable/p9"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/include2" />-->
+
+    <!--    <EditText-->
+    <!--        android:id="@+id/et_nick"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_alignParentRight="true"-->
+    <!--        android:layout_gravity="right"-->
+    <!--        android:layout_marginEnd="24dp"-->
+    <!--        android:background="@null"-->
+    <!--        android:textSize="18sp"-->
+    <!--        android:textColor="#8a8a8a"-->
+
+    <!--        app:layout_constraintBottom_toBottomOf="@+id/textView35"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toEndOf="@+id/textView35"-->
+    <!--        app:layout_constraintTop_toTopOf="@+id/textView35"-->
+    <!--        tools:text="昵称" />-->
+
+    <!--    <EditText-->
+    <!--        android:id="@+id/et_tel"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_gravity="right"-->
+    <!--        android:layout_marginEnd="24dp"-->
+    <!--        android:background="@null"-->
+    <!--        android:textSize="18sp"-->
+    <!--        android:textColor="#8a8a8a"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@+id/textView36"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toEndOf="@+id/textView36"-->
+    <!--        app:layout_constraintTop_toTopOf="@+id/textView36"-->
+    <!--        tools:text="电话" />-->
+
+    <!--    <RadioGroup-->
+    <!--        android:id="@+id/radioGroup"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_gravity="right"-->
+    <!--        android:orientation="horizontal"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@+id/textView37"-->
+    <!--        app:layout_constraintStart_toEndOf="@+id/textView37"-->
+    <!--        app:layout_constraintTop_toTopOf="@+id/textView37">-->
+
+    <!--        <RadioButton-->
+    <!--            android:id="@+id/rd_male"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:button="@null"-->
+    <!--            android:drawableStart="@drawable/male" />-->
+
+    <!--        <RadioButton-->
+    <!--            android:id="@+id/rd_female"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginLeft="8dp"-->
+    <!--            android:button="@null"-->
+    <!--            android:drawableStart="@drawable/female" />-->
+    <!--    </RadioGroup>-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/textView35"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginStart="24dp"-->
+    <!--        android:layout_marginTop="16dp"-->
+    <!--        android:text="昵称："-->
+    <!--        android:textSize="18sp"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/textView37" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/textView36"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="16dp"-->
+    <!--        android:text="电话："-->
+    <!--        android:textSize="18sp"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/textView35"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/textView35" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/textView37"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginStart="24dp"-->
+    <!--        android:layout_marginTop="64dp"-->
+    <!--        android:text="性别："-->
+    <!--        android:textSize="18sp"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/ava_img" />-->
+
+
+    <!--</androidx.constraintlayout.widget.ConstraintLayout>-->

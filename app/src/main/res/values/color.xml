@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="purple_200">#FFBB86FC</color>
+
+  <color name="purple_500">#FF6200EE</color>
+
+  <color name="purple_700">#FF3700B3</color>
+
+  <color name="teal_200">#FF03DAC5</color>
+
+  <color name="teal_700">#FF018786</color>
+
+  <color name="black">#FF000000</color>
+
+  <color name="white">#FFFFFFFF</color>
+  <color name="textcolor_checked">#1086F4</color>
+    <color name="textcolor">#8a8a8a</color>
+    <color name="main_tab_bg">#F7F7F8</color>      
+    <color name="login_button">#5D1012</color>
+    <color name="login_buton_focus">#B01E23</color>
+    <color name="sign_button">#EFEEEB</color>
+    <color name="sign_button_focus">#B01E23</color>
+    <color name="form_background">#E5E5E5</color>
+    <color name="page_background">#FFFFFF</color>
+    <color name="input_context">#AAAAAA</color>
+    <color name="button_font">#FFFFFF</color>
+    <color name="verify_button">#9Eb1D8</color>
+    <color name="verify_button_focus">#CCCCFF</color>
+    <color name="listview_divider_line">#EDD6BC</color>
+    <color name="listview_background">#FFFBDB</color>
+    <color name="before_input_context">#000000</color>
+    <color name="common_label">#000000</color>
+    <color name="listview_item_selected">#000000</color>
+  <!-- 用户设置 -->
+  <color name="Transparent">#00ffffff</color>
+  <color name="blue">#1086F4</color>
+  <color name="blue_light">#ffebebeb</color>
+  <!-- 通讯录 -->
+  <color name="contact_list_item_bg_pressed">#ffe5e5e5</color>
+  <color name="background">#ffffffff</color>
+  <!-- 新闻页 -->
+  <color name="homepage_playview_bg">#65000000</color>
+  <color name="menu_normal">#3c3c3c</color>
+  <color name="menu_pressed">#7c7c7c</color>
+
+  <color name="huises">#EFEEEE</color>
+  <color name="baise">#ffffff</color>
+  <color name="top_bg">#00A0E9</color>
+
+  <color name="message_list_line">#e1e1e1</color>
+  <color name="grv_bg">#88f5f5f5</color>
+  <!-- 描边颜色 -->
+  <color name="border_clo">#ccc</color>
+  <color name="text_clo">#333</color>
+  <color name="huise">#808080</color>
+  <color name="zhuti">#209e85</color>
+  <!--//数组游戏  点击后显示的额颜色s-->
+  <color name="game_background">#18924A</color>
+  <color name="puzzle_dark">#D19275</color>
+  <color name="puzzle_light">#B2DE90</color>
+  <color name="puzzle_hilite">#FF7F00</color>
+  <color name="puzzle_selected">#80000000</color>
+  <color name="line">#D8E3F5</color>
+  <color name="gray">#EDEDED</color>
+  <!--我的退出弹窗-->
+  <color name="trans">#00000000</color>
+  <color name="alertdialog_line">#c6c6c6</color>
+  <color name="actionsheet_blue">#037bff</color>
+  <color name="actionsheet_red">#FD4A2E</color>
+  <color name="actionsheet_gray">#8F8F8F</color>
+  <!-- yangguang-->
+
+
+<!--  <color name="item_navi_active">#673AB7</color>-->
+  <color name="item_navi_active">@color/blue</color>
+
+  <color name="item_navi_inactive">#8a8a8a</color>
+
+  <color name="separator">#7a81ff</color>
+  <drawable name="checked_bg">@color/gray</drawable>
+  <drawable name="unchecked_bg">@color/Transparent</drawable>
+</resources>

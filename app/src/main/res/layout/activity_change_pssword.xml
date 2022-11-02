@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.ChangePsswordActivity">
+
+    <include layout="@layout/header" />
+
+    <EditText
+        android:id="@+id/oldpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginRight="16dp"
+        android:drawableLeft="@drawable/ic_old_password"
+        android:ems="10"
+        android:hint="输入原密码"
+        android:inputType="textPassword"
+        android:textColorHint="#8a8a8a"
+        android:textSize="14sp"
+        tools:hint="输入原密码" />
+
+    <EditText
+        android:id="@+id/newpassword1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="16dp"
+        android:drawableLeft="@drawable/ic_new_password"
+        android:ems="10"
+        android:hint="输入新密码"
+        android:inputType="textPassword"
+        android:textColorHint="#8a8a8a"
+        android:textSize="14sp"
+        tools:hint="输入新密码" />
+
+    <EditText
+        android:id="@+id/newpassword2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="16dp"
+        android:drawableLeft="@drawable/ic_new_password"
+        android:ems="10"
+        android:hint="输入确认密码"
+        android:inputType="textPassword"
+        android:textColorHint="#8a8a8a"
+        android:textSize="14sp"
+        tools:hint="输入确认密码" />
+
+    <Button
+        android:id="@+id/update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/button_dra"
+        android:text="确认"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+</LinearLayout>

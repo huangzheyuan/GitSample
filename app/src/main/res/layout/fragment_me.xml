@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".fragment.MeFragment">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="64dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/p9" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textColor="#8a8a8a"
+        tools:text="用户名" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="#8a8a8a"
+        android:layout_marginTop="32dp"
+        android:orientation="vertical"
+        android:background="@drawable/linearlayout_frame"
+        android:showDividers="middle">
+
+        <TextView
+            android:id="@+id/pr1"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center_vertical"
+            android:text="个人信息"
+            android:textColor="#8a8a8a"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            android:drawableRight="@drawable/ic_right"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/pr2"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center_vertical"
+            android:text="订单列表"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            android:drawableRight="@drawable/ic_right"
+            android:textColor="#8a8a8a"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/pr3"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center_vertical"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            android:drawableRight="@drawable/ic_right"
+            android:text="修改密码"
+            android:textColor="#8a8a8a"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/pr4"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center_vertical"
+            android:text="意见反馈"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            android:drawableRight="@drawable/ic_right"
+            android:textColor="#8a8a8a"
+            android:textSize="16dp" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|bottom"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/button_dra"
+        android:text="退出"
+
+        android:textColor="#ffffff" />
+</LinearLayout>

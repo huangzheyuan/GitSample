@@ -1,0 +1,190 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="navTextInactive">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/item_navi_inactive</item>
+    </style>
+
+    <style name="navTextActive">
+        <item name="android:textColor">@color/item_navi_active</item>
+
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="nobar.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="nobar.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="nobar.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+<!--    <style name="AppBaseTheme" parent="android:Theme.Light">-->
+<!--        &lt;!&ndash;-->
+<!--            Theme customizations available in newer API levels can go in-->
+<!--            res/values-vXX/styles.xml, while customizations related to-->
+<!--            backward-compatibility can go here.-->
+<!--        &ndash;&gt;-->
+<!--    </style>-->
+
+    <style name="AppBaseTheme" parent="Theme.SmartCity">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+<!--    <style name="nobar" parent="Theme.AppCompat.Light.NoActionBar" >-->
+<!--        <item name="windowActionBar">false</item>-->
+<!--        <item name="windowNoTitle">true</item>-->
+
+<!--    </style>-->
+    <style name="nobar" parent="Theme.SmartCity" >
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+    </style>
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+
+     
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <style name="button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="theme_c">
+        <item name="android:textSize">34sp</item>
+    </style>
+    <style name="main_tab">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@drawable/tab_textcolor</item>
+    </style>
+    <style name="main_tab_1">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@drawable/tab_textcolor_1</item>
+    </style>
+     <style name="CustomTheme" parent="android:Theme">
+     <item name="android:windowTitleSize">34dp</item>
+     <item name="android:windowTitleBackgroundStyle">@style/CustomWindowTitleBackgrond</item>
+    </style>
+     <style name="CustomWindowTitleBackgrond">
+        <item name="android:background">#C11919</item>
+    </style>
+    <style name="radio_style">
+
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+    </style>
+    <!-- 文本右边箭头样式 -->
+
+
+
+    -<style name="img_arrow">
+
+    <item name="android:layout_width">wrap_content</item>
+
+    <item name="android:layout_height">wrap_content</item>
+
+    <item name="android:src">@drawable/arrow_right_small</item>
+
+</style>
+
+    <!-- 上圆角样式 -->
+
+
+
+    -<style name="top_layout" parent="base_layout">
+
+    <item name="android:background">@drawable/top_layout_selector</item>
+
+</style>
+
+    <!-- 下圆角样式 -->
+
+
+
+    -<style name="bottom_layout" parent="base_layout">
+
+    <item name="android:background">@drawable/bottom_layout_selector</item>
+
+</style>
+    <!-- view分割线样式 -->
+    <style name="bg_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">@color/border_clo</item>
+    </style>
+    <!-- 全圆角样式 -->
+    <style name="single_layout" parent="base_layout">
+        <item name="android:background">@drawable/single_layout_selector</item>
+    </style>
+    <!-- 共用层样式 -->
+    <style name="base_layout">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:paddingBottom">16dp</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingRight">12dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+    </style>
+    <style name="wrap_layout">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:padding">1px</item>
+        <item name="android:background">@drawable/bg_layout_shape</item>
+    </style>
+    <!--无圆角样式 -->
+
+
+
+    -<style name="mid_layout" parent="base_layout">
+
+    <item name="android:background">@drawable/mid_layout_selector</item>
+
+</style>
+    <!-- 修改个人信息弹窗动画 -->
+
+
+
+    <style name="AnimBottom" parent="@android:style/Animation">
+
+    <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+
+    <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+
+</style>
+
+    
+</resources>

@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/header" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/main_ViewPager"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <RadioGroup
+        android:id="@+id/main_tab_RadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/Transparent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio_home"
+            style="@style/main_tab"
+            android:checked="true"
+            android:drawableTop="@drawable/icon_index"
+            android:text="@string/tabhome" />
+
+        <RadioButton
+            android:id="@+id/radio_service"
+            style="@style/main_tab"
+            android:drawableTop="@drawable/icon_service"
+
+            android:text="@string/tabservice" />
+
+        <RadioButton
+            android:id="@+id/radio_enviroment"
+            style="@style/main_tab_1"
+            android:drawableTop="@drawable/icon_enviroments"
+            android:text="党建活动" />
+
+        <RadioButton
+            android:id="@+id/radio_news"
+            style="@style/main_tab"
+            android:drawableTop="@drawable/icon_news"
+            android:text="@string/tabNews" />
+
+        <RadioButton
+            android:id="@+id/radio_me"
+            style="@style/main_tab"
+            android:drawableTop="@drawable/icon_me"
+            android:text="@string/tabpersonal" />
+    </RadioGroup>
+
+</LinearLayout>

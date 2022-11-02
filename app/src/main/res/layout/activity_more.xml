@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="#F6F5F6"
+    tools:context=".view.MoreActivity">
+
+    <include layout="@layout/header"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:background="@android:drawable/edit_text"
+                android:enabled="true"
+                android:gravity="center"
+                android:hint="搜索"
+                android:inputType="textMultiLine"
+                android:maxLines="10"
+                android:minLines="8"
+                android:scrollbars="vertical" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#FFB4AA"
+                    android:textColor="#ffffff"
+                    android:layout_marginRight="5dp"
+                    android:text="未学习" />
+
+                <Button
+                    android:id="@+id/button7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="#ffffff"
+                    android:background="#16CAB9"
+                    android:text="正在学习" />
+
+                <Button
+                    android:id="@+id/button8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="#ffffff"
+                    android:layout_marginLeft="5dp"
+                    android:background="#BAAAFF"
+                    android:text="已完成" />
+            </LinearLayout>
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:columnCount="2"
+                android:rowCount="2">
+
+                <LinearLayout
+                    android:id="@+id/s1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/more_item_press"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="130dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="3dp"
+                        app:srcCompat="@drawable/learn1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_marginBottom="8dp"
+                        android:lines="1"
+                        android:singleLine="true"
+                        android:text="学习十九大，奋进新时代，努力成为学习模范" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_marginBottom="8dp"
+                        android:lines="1"
+                        android:singleLine="true"
+                        android:text="未学习"
+                        android:textColor="#60D665" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/s2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/more_item_press"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="130dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="3dp"
+                        app:srcCompat="@drawable/learn1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_marginBottom="8dp"
+                        android:lines="1"
+                        android:singleLine="true"
+                        android:text="学习十九大，奋进新时代，努力成为学习模范" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_marginBottom="8dp"
+                        android:lines="1"
+                        android:singleLine="true"
+                        android:text="正在学习"
+                        android:textColor="#60D665" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/s3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/more_item_press"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="130dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="3dp"
+                        app:srcCompat="@drawable/learn1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_marginBottom="8dp"
+                        android:lines="1"
+                        android:singleLine="true"
+                        android:text="学习十九大，奋进新时代，努力成为学习模范" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_marginBottom="8dp"
+                        android:lines="1"
+                        android:singleLine="true"
+                        android:text="未学习"
+                        android:textColor="#60D665" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/s4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/more_item_press"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="130dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="3dp"
+                        app:srcCompat="@drawable/learn1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_marginBottom="8dp"
+                        android:lines="1"
+                        android:singleLine="true"
+                        android:text="学习十九大，奋进新时代，努力成为学习模范" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_marginBottom="8dp"
+                        android:lines="1"
+                        android:singleLine="true"
+                        android:text="未学习"
+                        android:textColor="#60D665" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/more_item_press"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="130dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="3dp"
+                        app:srcCompat="@drawable/learn1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_marginBottom="8dp"
+                        android:lines="1"
+                        android:singleLine="true"
+                        android:text="学习十九大，奋进新时代，努力成为学习模范" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_marginBottom="8dp"
+                        android:lines="1"
+                        android:singleLine="true"
+                        android:text="未学习"
+                        android:textColor="#60D665" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/more_item_press"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="130dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="3dp"
+                        app:srcCompat="@drawable/learn1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginRight="3dp"
+                        android:lines="1"
+                        android:singleLine="true"
+                        android:layout_marginBottom="8dp"
+                        android:text="学习十九大，奋进新时代，努力成为学习模范" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_marginBottom="8dp"
+                        android:lines="1"
+                        android:singleLine="true"
+                        android:text="已完成"
+                        android:textColor="#60D665" />
+                </LinearLayout>
+
+            </GridLayout>
+
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/login_btn_style"
+                android:text="查看更多"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

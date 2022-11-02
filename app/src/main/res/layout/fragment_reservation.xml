@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    tools:context=".view.car.query.fragments.checkfragment.CheckFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#e8e8e8"
+        android:paddingStart="8dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:text="车辆列表"
+        android:textColor="#282828"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="预约日期：" />
+
+        <EditText
+            android:id="@+id/editText_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:editable="false"
+            android:inputType="date"
+            android:textIsSelectable="true" />
+
+        <ImageButton
+            android:id="@+id/button_date"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:backgroundTint="@color/item_navi_active"
+            android:background="@drawable/ic_date" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="预约时间：" />
+
+        <EditText
+            android:id="@+id/editText_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="time"
+            android:editable="false"
+
+            android:textIsSelectable="true" />
+
+        <ImageButton
+            android:id="@+id/button_time"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:backgroundTint="@color/item_navi_active"
+            android:background="@drawable/ic_time" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="预约地点：" />
+
+        <EditText
+            android:id="@+id/editText_place"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="time"
+            android:editable="false"
+
+            android:textIsSelectable="true" />
+
+        <ImageButton
+            android:id="@+id/button_address"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:backgroundTint="@color/item_navi_active"
+            android:background="@drawable/ic_location" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:layout_marginTop="8dp"
+        android:id="@+id/button_ok"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/item_navi_active"
+        android:textColor="@color/white"
+        android:text="预约" />
+
+</LinearLayout>

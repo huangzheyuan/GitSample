@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.FeedbackActivity">
+
+    <include layout="@layout/header" />
+
+
+    <EditText
+        android:id="@+id/feedback_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/feedback"
+        android:enabled="true"
+        android:gravity="left|top"
+        android:hint="标题"
+        android:inputType="textMultiLine"
+        android:maxLines="1"
+        android:minLines="1"
+        android:padding="4dp"
+        android:scrollbars="vertical"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/feedback_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/feedback"
+        android:enabled="true"
+        android:gravity="left|top"
+        android:hint="我的反馈"
+        android:inputType="textMultiLine"
+        android:maxLines="10"
+        android:minLines="8"
+        android:padding="4dp"
+        android:scrollbars="vertical"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/button_dra"
+        android:text="提交"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/feedbackList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/button_dra"
+        android:text="反馈列表"
+        android:textColor="#ffffff" />
+
+</LinearLayout>
